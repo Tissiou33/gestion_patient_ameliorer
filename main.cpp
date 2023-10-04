@@ -160,7 +160,7 @@ p.date_sortie="";
 }
 std::getline(file, p.maladie);
 
-// Ajouter le patient à la liste des patients
+// Ajouter le patient Ã  la liste des patients
 patients.push_back(p);
 }
 
@@ -172,14 +172,19 @@ int main(){
 const char* filename = "patients.txt";
 std::vector<Patient> patients;
 
-// Charger les données depuis le fichier
+// Charger les donnÃ©es depuis le fichier
 charger_depuis_fichier(filename, patients);
 
 int choix = 0;
 
 while(choix!=6){
-    std::cout<<std::endl<<"Menu"<<std::endl<<"1. Saisir un patient"<<std::endl<<"2. Rechercher un patient"<<std::endl<<"3. Modifier un patient"
-    <<std::endl<<"4. Afficher un patient"<<std::endl<<"5. Afficher tous les patients"<<std::endl<<"6. Quitter"<<std::endl;
+    std::cout<<std::endl<<"Menu"<<
+    std::endl<<"1. Saisir un patient"<<
+    std::endl<<"2. Rechercher un patient"<<
+    std::endl<<"3. Modifier un patient"<<
+    std::endl<<"4. Afficher un patient"<<
+    std::endl<<"5. Afficher tous les patients"<<
+    std::endl<<"6. Quitter"<<std::endl;
     std::cin>>choix;
 
     if ( choix >7)
